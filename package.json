@@ -1,7 +1,7 @@
 {
-  "name": "xkpasswd",
+  "name": "uls-haiku-pwd",
   "version": "1.0.4",
-  "description": "Memorable password generator",
+  "description": "USA Link System Haiku Password Generator",
   "keywords": [
     "password",
     "generator",
@@ -10,7 +10,8 @@
     "xkpasswd",
     "xkpassword",
     "long",
-    "words"
+    "words",
+    "haiku"
   ],
   "main": "index.js",
   "bin": {
@@ -19,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vot/xkpasswd-node.git"
+    "url": "https://github.com/usalinksystem/uls-haiku-pwd.git"
   },
-  "author": "Vot Z <http://vot-z.com>",
+  "author": "Vot Z <http://vot-z.com>, usalinksystem <http://usalinksystem.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vot/xkpasswd-node/issues"
+    "url": "https://github.com/usalinksystem/uls-haiku-pwd/issues"
   },
-  "homepage": "https://github.com/vot/xkpasswd-node",
+  "homepage": "https://github.com/usalinksystem/uls-haiku-pwd",
   "dependencies": {
     "clarg": "0.0.2"
   },
