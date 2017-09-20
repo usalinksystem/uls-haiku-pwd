@@ -47,7 +47,7 @@ var h = {
     var separators = typeof opts.separators === 'string' ? opts.separators : predefined.separators;
 
     rtn.pattern = opts.pattern || predefined.pattern;
-    rtn.separator = separators.split('')[h.random(0, separators.length - 1)];
+    rtn.separators = separators;
     rtn.transform = opts.transform || predefined.transform || 'lowercase';
 
     return rtn;
@@ -65,7 +65,9 @@ module.exports = function (opts) {
   pattern.forEach(function (type) {
     var value;
     if (type === 'd') value = h.random(0, 9);
-    if (type === 's') value = o.separator;
+    if (type === 's') {
+      value = o.separators[Math.floor(Math.random()*o.separators.length)];
+    }
     if (type === 'w' || type == 'W') {
       value = h.getRandomWord();
       if (o.transform && o.transform == 'alternate') uppercase = !uppercase;
