@@ -1,4 +1,4 @@
-var wordList = require('./xkpasswd-words.json');
+var wordList = require('./haiku.json');
 
 // define helpers
 var h = {
